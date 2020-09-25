@@ -23,5 +23,8 @@ def turnOn(channel):
 	GPIO.output(7,GPIO.HIGH)
 	
 
+#Call the turn on function when the button is pressed.
+GPIO.add_event_detect(11,GPIO.RISING,callback=turnOn,bouncetime = 300)
+
 
 
