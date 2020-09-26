@@ -26,5 +26,7 @@ def turnOn(channel):
 #Call the turn on function when the button is pressed.
 GPIO.add_event_detect(11,GPIO.RISING,callback=turnOn,bouncetime = 300)
 
-
+def main():
+	print("TURNS LED ON")
+	time.sleep(10)
 
